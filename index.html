@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Of Asia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="main" id="main">
+    
+    <div class="container" id="contain">
+        <h1 class="title">Bank of Asia</h1>
+        <h4>Login </h4>
+        <br>
+        <input type="email" name="" id="email" class="form" placeholder="Your email">
+        <br>
+        <input type="password" name="" id="password" class="form" placeholder="Password">
+        <br>
+        <button id="login">Login </button>
+    </div>
+    <div class="" id="transection">
+        <div class="display" >
+            <div id="diposit" class="viewbox1">
+                <h1>Deposit</h1>
+                <h2>$ <span id="dipositValue">0</span> </h2>
+            </div>
+            <div id="withdraw"class="viewbox2">
+                <h1>Withdraw</h1>
+                <h2>$ <span id="withdrawValue">0</span></h2>
+            </div>
+            <div id="total"class="viewbox3">
+                <h1>Balance</h1>
+                <h2>$ <span id="totalValue">0</span></h2>
+            </div>
+        </div>
+        <div class="display">
+            <div class="input-diposit box-style">
+                <h1 class="heading">Deposit</h1>
+                <input type="number" placeholder="$ you want to diposit" id="diposit-amount" class="input1">
+                <button class="btn" id="diposit-btn">
+                    Deposit
+                </button>
+            </div>
+            <div class="input-withdraw">
+                <h1 class="heading">Withdraw</h1>
+                <input type="number" placeholder="$ you want to withdraw" id="withdraw-amount" class="input1">
+                <button class="btn" id="withdraw-btn">
+                    Withdraw
+                </button>
+                <div class="message">
+                    <h1 class="heading" id="message"> You do not have sufficient balance to deposit</h1>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+   </div>
+    <script src="app.js"></script>
+</body>
+</html>
